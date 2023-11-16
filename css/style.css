@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('assets/fonts/SofiaProMedium.eot');
+    src: local('Sofia Pro Medium'), local('SofiaProMedium'),
+    url('assets/fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/SofiaProMedium.woff2') format('woff2'),
+    url('assets/fonts/SofiaProMedium.woff') format('woff'),
+    url('assets/fonts/SofiaProMedium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('assets/fonts/SofiaProBold.eot');
+    src: local('Sofia Pro Bold'), local('SofiaProBold'),
+    url('assets/fonts/SofiaProBold.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/SofiaProBold.woff2') format('woff2'),
+    url('assets/fonts/SofiaProBold.woff') format('woff'),
+    url('assets/fonts/SofiaProBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('assets/fonts/CircularStd-Medium.eot');
+    src: local('CircularStd-Medium'),
+    url('assets/fonts/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/CircularStd-Medium.woff2') format('woff2'),
+    url('assets/fonts/CircularStd-Medium.woff') format('woff'),
+    url('assets/fonts/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+--aside-width: 250px
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    position: relative;
+    padding-left: 37px;
+}
+.header__menu nav{
+    height: 75px;
+    margin-left: var(--aside-width);
+}
+.aside__menu {
+    position: absolute;
+    width: var(--aside-width);
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.aside__menu-list ul{
+    list-style: none;
+    color: #000;
+    font-family: 'Sofia Pro';
+    font-size: 16px;
+    font-weight: 400;=
+
+}
+.header__menu-list ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+main{
+    margin-left: var(--aside-width);
+}

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('G/Desktop/Front-end sprint/hw_14/assets/SofiaProMedium.eot');
+    src: local('Sofia Pro Medium'), local('SofiaProMedium'),
+        url('G/Desktop/Front-end sprint/hw_14/assets/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
+        url('G/Desktop/Front-end sprint/hw_14/assets/SofiaProMedium.woff2') format('woff2'),
+        url('G/Desktop/Front-end sprint/hw_14/assets/SofiaProMedium.woff') format('woff'),
+        url('G/Desktop/Front-end sprint/hw_14/assets/SofiaProMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('G/Desktop/Front-end sprint/hw_14/assets/SofiaProBold.eot');
+    src: local('Sofia Pro Bold'), local('SofiaProBold'),
+        url('G/Desktop/Front-end sprint/hw_14/assets/SofiaProBold.eot?#iefix') format('embedded-opentype'),
+        url('G/Desktop/Front-end sprint/hw_14/assets/SofiaProBold.woff2') format('woff2'),
+        url('G/Desktop/Front-end sprint/hw_14/assets/SofiaProBold.woff') format('woff'),
+        url('G/Desktop/Front-end sprint/hw_14/assets/SofiaProBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('G/Desktop/Front-end sprint/hw_14/assets/CircularStd-Medium.eot');
+    src: local('CircularStd-Medium'),
+        url('G/Desktop/Front-end sprint/hw_14/assets/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('G/Desktop/Front-end sprint/hw_14/assets/CircularStd-Medium.woff2') format('woff2'),
+        url('G/Desktop/Front-end sprint/hw_14/assets/CircularStd-Medium.woff') format('woff'),
+        url('G/Desktop/Front-end sprint/hw_14/assets/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
