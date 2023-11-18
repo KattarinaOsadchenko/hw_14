@@ -53,10 +53,7 @@ header {
     position: relative;
     padding-left: 37px;
 }
-.header__menu nav{
-    height: 75px;
-    margin-left: var(--aside-width);
-}
+
 .aside__menu {
     position: absolute;
     width: var(--aside-width);
@@ -66,21 +63,24 @@ header {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-
 }
-.aside__menu-list ul{
-    list-style: none;
+.aside__menu-list a{
     color: #000;
-    font-family: 'Sofia Pro';
+    font-family: 'Sofia Pro', sans-serif ;
     font-size: 16px;
-    font-weight: 400;=
+    font-weight: 400;
+}
 
+.header__menu nav{
+    height: 75px;
+    margin-left: var(--aside-width);
 }
 .header__menu-list ul{
     list-style: none;
     display: flex;
     justify-content: right;
 }
+
 main{
     margin-left: var(--aside-width);
 }
