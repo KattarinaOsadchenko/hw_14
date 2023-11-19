@@ -63,6 +63,32 @@ header {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    padding: 51px 42px 60px 56px;
+}
+.aside__menu-logo{
+    margin-bottom: 57px;
+}
+.aside__menu h2{
+    color: #000;
+    font-family: Sofia Pro, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 45px;
+}
+.aside__menu-list{
+    column-gap: 25px;
+}
+.aside__menu-list li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.aside__menu-list ul{
+    list-style: none;
+
 }
 .aside__menu-list a{
     color: #000;
@@ -70,17 +96,73 @@ header {
     font-size: 16px;
     font-weight: 400;
 }
-
-.header__menu nav{
-    height: 75px;
+.aside__menu-img{
+    max-width: 21px;
+}
+.header__menu{
+    display: flex;
     margin-left: var(--aside-width);
+    height: 75px;
+}
+.header__menu-list{
+    display: flex;
+
 }
 .header__menu-list ul{
     list-style: none;
     display: flex;
     justify-content: right;
-}
+    align-items: center;
+    gap: 42px;
+    margin-right: 47px;
 
+}
+.header__menu-list a{
+    color: #000;
+    font-family: Circular Std, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+}
+.header__menu-list a::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: 0.3s;
+}
+.header__menu-list a:hover:after{
+    width: 100%;
+}
+.header__menu-img{
+    gap: 25px;
+    align-items: center;
+}
+.header__menu-search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 17px;
+}
+.header__menu-search img{
+    max-width: 24px;
+    max-height: 24px;
+}
+.header__menu-search input{
+    border: none;
+    color: #000;
+    font-family: Circular Std, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 main{
     margin-left: var(--aside-width);
 }
