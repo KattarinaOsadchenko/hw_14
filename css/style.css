@@ -182,12 +182,12 @@ main{
 }
 .img__vertical-bottom, .img__vertical-top{
     width: var(--width-img);
-    height: calc((100vh - 90px) / 2);
+    height: calc((100vh - 200px) / 2);
     min-height: 380px;
 }
 .img__horizontal-left, .img__horizontal-right{
     width: 100%;
-    height: calc((100vh - 100px)/4);
+    height: calc((100vh - 160px)/4);
     min-height: 180px;
 }
 
