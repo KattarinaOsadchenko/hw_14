@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('assets/fonts/SofiaProMedium.eot');
+    src: url('../assets/fonts/SofiaProMedium.eot');
     src: local('Sofia Pro Medium'), local('SofiaProMedium'),
-    url('assets/fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/SofiaProMedium.woff2') format('woff2'),
-    url('assets/fonts/SofiaProMedium.woff') format('woff'),
-    url('assets/fonts/SofiaProMedium.ttf') format('truetype');
+    url('../assets/fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/SofiaProMedium.woff2') format('woff2'),
+    url('../assets/fonts/SofiaProMedium.woff') format('woff'),
+    url('../assets/fonts/SofiaProMedium.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -13,12 +13,12 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('assets/fonts/SofiaProBold.eot');
+    src: url('../assets/fonts/SofiaProBold.eot');
     src: local('Sofia Pro Bold'), local('SofiaProBold'),
-    url('assets/fonts/SofiaProBold.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/SofiaProBold.woff2') format('woff2'),
-    url('assets/fonts/SofiaProBold.woff') format('woff'),
-    url('assets/fonts/SofiaProBold.ttf') format('truetype');
+    url('../assets/fonts/SofiaProBold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/SofiaProBold.woff2') format('woff2'),
+    url('../assets/fonts/SofiaProBold.woff') format('woff'),
+    url('../assets/fonts/SofiaProBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -26,19 +26,21 @@
 
 @font-face {
     font-family: 'Circular Std';
-    src: url('assets/fonts/CircularStd-Medium.eot');
+    src: url('../assets/fonts/CircularStd-Medium.eot');
     src: local('CircularStd-Medium'),
-    url('assets/fonts/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/CircularStd-Medium.woff2') format('woff2'),
-    url('assets/fonts/CircularStd-Medium.woff') format('woff'),
-    url('assets/fonts/CircularStd-Medium.ttf') format('truetype');
+    url('../assets/fonts/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/CircularStd-Medium.woff2') format('woff2'),
+    url('../assets/fonts/CircularStd-Medium.woff') format('woff'),
+    url('../assets/fonts/CircularStd-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 :root{
---aside-width: 250px
+--aside-width: 250px;
+--font-sm: 400;
+--font-lg: 800;
 }
 a {
     text-decoration: none;
@@ -63,7 +65,7 @@ header {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    padding: 51px 42px 60px 56px;
+    padding-top: 51px;
 }
 .aside__menu-logo{
     margin-bottom: 57px;
@@ -73,7 +75,7 @@ header {
     font-family: Sofia Pro, sans-serif;
     font-size: 30px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: var(--font-lg);
     margin-bottom: 45px;
 }
 .aside__menu-list{
@@ -88,13 +90,12 @@ header {
 
 .aside__menu-list ul{
     list-style: none;
-
 }
 .aside__menu-list a{
     color: #000;
     font-family: 'Sofia Pro', sans-serif ;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--font-sm);
 }
 .aside__menu-img{
     max-width: 21px;
@@ -113,16 +114,15 @@ header {
     display: flex;
     justify-content: right;
     align-items: center;
-    gap: 42px;
     margin-right: 47px;
-
+    gap: 42px;
 }
 .header__menu-list a{
     color: #000;
     font-family: Circular Std, sans-serif;
     font-size: 17px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--font-sm);
     line-height: normal;
     position: relative;
 }
@@ -160,9 +160,51 @@ header {
     font-family: Circular Std, sans-serif;
     font-size: 17px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--font-sm);
     line-height: normal;
 }
 main{
     margin-left: var(--aside-width);
+}
+.img__top, .img__bottom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+.img__top, .img__bottom, .img__vertical, .img__horizontal{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.img__vertical{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+.img__vertical, .img__horizontal{
+    width: calc(50% - 10px);
+}
+.img__vertical-top p{
+    color: #000;
+    font-family: Sofia Pro, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: var(--font-lg);
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+.img__vertical-top, .img__vertical-bottom, .img__horizontal-left, .img__horizontal-right{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img__vertical-bottom, .img__vertical-top{
+
+    height: 180px;
+}
+.img__horizontal{
+    display: flex;
+    gap: 20px;
+
 }
